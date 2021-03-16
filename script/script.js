@@ -15,3 +15,10 @@ function showDivs(n) {
         }
   x[slideIndex-1].style.display = "block";  
 }
+
+// 
+
+
+let myDate = new Date();
+let mydateYear = document.getElementById("varYear");
+    mydateYear.innerHTML = myDate.getFullYear();
