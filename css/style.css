@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+
+.container{
+    width: 100%;
+    font-family: 'Roboto';
+}
+
+.contactSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #0f0833;
+    color: #fffefe;
+    width: 100%;
+    /* margin-bottom: 20px; */
+}
+
+.contactSection p{
+    margin-left: 10px;
+}
+
+.phone, .location,.socialMedia{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: #fFFC94;
+    border-bottom: 1px solid #fffefe;
+    box-shadow: 1px 3px 3px #888888;
+}
+.logo{
+    width: 200px;
+    height: 100px;
+    padding-top: 10px;
+}
+
+.logo img{
+    width: 100%;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    padding: 40px 0 30px 0;
+}
+
+.nav-links a{
+    text-decoration: none;
+    padding:0 30px;
+    font-size: 1.1rem;
+    color: #140c40;
+}
+
+.nav-links a:hover{
+    text-decoration: underline;
+}
+
+.heading{
+    position: relative;
+}
+
+.heading h1, .heading p, .heading a{
+    position: absolute;
+    margin: 50px 0;
+}
+
+.slideshow img{
+    width: 100%;
+    height: 80vh;
+}
+.about{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column: 2/ span 3;
+    grid-gap: 10px;
+    min-height: 70vh;
+    margin-top: 100px;
+}
+.about-info{
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.about-info p{
+    line-height: 1.5;
+    letter-spacing: 2;
+}
+
+.btn{
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: #140c40;
+    padding: 15px 55px ;
+    color:#e7edfa
+}
+
+.about-info h1, .about-info p,.about-info a{
+    margin:20px 50px;
+}
+.about-img img{
+    width: 100%;
+}
+
+.boxes{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    padding: 50px 50px;
+    text-align: center;
+    background-color:#F1F1F1;
+}
+
+.boxes h2, .boxes p, .boxes>.btn{
+    margin: 20px 0;
+}
+
+.boxes>.btn{
+    margin: 60px 0;
+}
+
+.box1{
+    background-color: #ABD174;
+}
+
+.box2{
+    background-color: #ffc948;
+}
+
+.box3{
+    background-color: #f4a972;
+}
+
+.box1, .box2, .box3{
+padding: 30px;
+}
+.get-account{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #140c40;
+    color: #e7edfa;
+    padding: 50px 0;
+}
+
+.get-account>.btn{
+    background-color: #ffefef;
+    color: #140c40;
+    padding: 15px 60px ;
+    font-weight: bold;
+}
+
+.get-account>a{
+    margin-left: 50px;
+}
+
+.product-services{
+    
+}
+.product-services h1{
+    margin: 70px 0 30px 50px;
+}
+
+.products{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 20px;
+    padding: 50px;
+}
+
+/* .products div{
+border: 1px solid #000;
+} */
+
+.products h4, .products p{
+    margin: 10px 0;
+}
+.products img{
+    width: 100%;
+}
+
+.product1{
+    width: 300px;
+    max-height: 100px !important;
+}
+.ebanking{
+    display: grid;
+    grid-template-columns: auto auto ;
+    grid-gap: 20px;
+    padding: 50px;
+}
+
+.ebanking img{
+    width: 70%;
+}
+
+.footer{
+    padding: 50px;
+    background-color: #171517;
+    color: #fffefe;
+}
