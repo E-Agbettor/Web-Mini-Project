@@ -45,54 +45,37 @@
         </nav>
         <!-- section end -->
 
-        <!-- showcase section -->
+        <!-- deposit section -->
         <div class="showcase"  >
             <div class="about-heading" id="contact-heading">
-                <h1>Contact Us</h1>
+                <h1>E-Banking made easy, <span>Every where.</span></h1>
             </div>  
-            <div class="about-us-content">
-                <h1>Your comments and questions are important to us.</h1>
-                <p>For general inquiries about your nBank account,
-                     you can contact us via email. Emails are received at
-                      our main office in Whitinsville, MA, Monday through Friday, 
-                      :30 a.m. - 4:30 p.m. 
-                    Our goal is to respond to your request within 24 hours of receipt 
-                    (except for weekends and holidays).
-                </p>
-                <br> 
-                    <hr>
-                <br>
-            <div class="contact">
-                <div class="contact-form">
-                    <form action="/action_page.php">
-                        <label for="fname">Full Name</label>
-                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                    
-                        <label for="lname">Email</label>
-                        <input type="email" id="lname" name="lastname" placeholder="Your email..">
-                    
-                        <label for="country">Country</label>
-                        <select id="country" name="country">
-                        <option value="ghana">Ghana</option>
-                        <option value="nigeria">Nigeria</option>
-                        <option value="usa">USA</option>
-                        </select>
-                    
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
-                    
-                        <a href="about.html" class="btn">Submit</a>
+           
+            <div id="deposit">
+                <div class="deposit">
+                    <form>
+                        <label for="cname">Full Name</label>
+                        <input type="text" id="cname" name="cname" placeholder="Your name..">
+                        
+                        <label for="aname">Enter Amount</label>
+                        <input type="text" id="aname" name="aname" placeholder="0.00">
+
+                        <button class="btn" id="calculate">Deposit</button>
                     </form>
                 </div>
-
-                <div class="contact-info">
-                    <p>Need a help? Contact us and we'll get back to you within 24 hours.</p>
-                    <p><i class="fa fa-map-marker" aria-hidden="true"></i> Tema, Ghana</p>
-                    <p><i class="fa fa-mobile" aria-hidden="true"></i>+233 54 3312213 | +233 57 9312213</p>
-                    <p><i class="fa fa-envelope" aria-hidden="true"></i> elliot.agbettor@amlitech.org</p>
-                    <p><i class="fa fa-envelope" aria-hidden="true"></i> info@nBank.com</p>
+                <div class="deposit-info">
+                    <h1>Customer Deposit Management</h1> <hr><br>
+                    <p>Name: <span id="cusName">kofi Manu</span>
+                    </p>
+                    <p>Previous balance: <span id="pBalance">00.00</span>
+                    </p>
+                    <p>Current balance: <span id="cBalance">00.00</span>
+                    </p>
+                    <p>Total balance: <span id="tBalance">00.00</span>
+                    </p>
                 </div>
-            </div>                        
+            </div>
+        
         </div>
         <!-- product & services section -->
         <div class="product-services" id="about-bkgColor">
