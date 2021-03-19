@@ -8,6 +8,9 @@ a{
     text-decoration: none;
 }
 
+a:hover{
+    color: #ffbb29;
+}
 .container{
     width: 100%;
     font-family: 'Roboto';
@@ -408,7 +411,7 @@ input[type=text], input[type=email], select, textarea {
 footer{
     padding: 50px;
     background-color: #171517;
-    color: #fFFC94;
+    color: #fffefe;
     text-align: center;
     font-family: 'Roboto';
 }
@@ -420,10 +423,6 @@ footer h4{
 footer a{
     padding: 20px;
     text-decoration: none;
-    color: #fFFC94;
-}
-
-footer a:hover{
     color: #fffefe;
 }
 
