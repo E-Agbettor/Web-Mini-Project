@@ -127,7 +127,7 @@ nav{
 #boxes{
     padding-top: 50px;
     padding-bottom: 30px;
-    background-color: #fFFC94;
+    background-color: #e7edfa;
 }
 
 #boxes h1{
@@ -427,39 +427,37 @@ footer a:hover{
     color: #fffefe;
 }
 
+.article a{
+    color: #fffefe;
+}
 
 
 /* slideshow */
 
-.mySlides {display: none}
-
 /* Slideshow container */
 .slideshow-container {
     min-width: 1000px;
-    min-height: 70%;
+    max-height: 500px;
     position: relative;
     margin: auto;
+    overflow: hidden;
   }
   
+  .slideshow-container img{
+    max-width: 100%;
+  }
   /* Caption text */
   .text {
-    color: #f2f2f2;
-    font-size: 15px;
+    color: #140c40;
+    font-size: 4rem;
     padding: 8px 12px;
     position: absolute;
     bottom: 8px;
     width: 100%;
     text-align: center;
+
   }
   
-  /* Number text (1/3 etc) */
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
   
   /* The dots/bullets/indicators */
   .dot {

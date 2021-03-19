@@ -47,44 +47,31 @@
 
         <!-- showcase section -->
         <div class="showcase">
-            <!-- <div class="heading">
-                <h1>nBank</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. sam voluptatibus odio iure.</p>
-                <a href="about.html" class="btn">Learn more</a>
-            </div> -->
-            <div class="slideshow">
-                <div class="slideshow-container">
+            <div class="slideshow-container">
 
-                    <div class="mySlides fade">
-                      <div class="numbertext">1 / 3</div>
-                      <img src="img/pexels-burst-374820-min.jpg" style="width:100%">
-                      <div class="text">Caption Text</div>
-                    </div>
-                    
-                    <div class="mySlides fade">
-                      <div class="numbertext">2 / 3</div>
-                      <img src="img/pexels-andrea-piacquadio-859265-min.jpg" style="width:100%">
-                      <div class="text">Caption Two</div>
-                    </div>
-                    
-                    <div class="mySlides fade">
-                      <div class="numbertext">3 / 3</div>
-                      <img src="img/pexels-pixabay-50987-min.jpg" style="width:100%">
-                      <div class="text">Caption Three</div>
-                    </div>
-                    
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                    
-                    </div>
-                    <br>
-                    
-                    <div style="text-align:center">
-                      <span class="dot" onclick="currentSlide(1)"></span> 
-                      <span class="dot" onclick="currentSlide(2)"></span> 
-                      <span class="dot" onclick="currentSlide(3)"></span> 
-                    </div>
-              </div>
+                <div class="mySlides fade">
+                  <img src="img/pexels-andrea-piacquadio-859265-min.jpg" >
+                  <div class="text">Mobile Banking</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <img src="img/pexels-pixabay-50987-min.jpg" >
+                  <div class="text">Electronic Banking</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <img src="img/pexels-burst-374820-min.jpg" >
+                  <div class="text">Student Banking</div>
+                </div>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                </div>
         </div>
         <!-- section end -->
 
@@ -222,6 +209,7 @@
             </p>
             <h4>nBank Limited &reg;</h4>
             <p>Copyright &copy; <span id="varYear"></span>, All Rights Reserved</p>
+            <p class="article">Articles copied from <a href="https://www.unibank.com/business-home"> Unibank</a></p>
         </footer>
           
         </div>
@@ -229,5 +217,29 @@
 
     </div>
     <script src="script/script.js"></script>
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }    
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
 </body>
 </html>
