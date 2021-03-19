@@ -44,7 +44,7 @@ a{
 nav{
     display: flex;
     justify-content: space-around;
-    background-color: #fFFC94;
+    background-color: #fff;
     border-bottom: 1px solid #fffefe;
     box-shadow: 1px 3px 3px #888888;
 }
@@ -282,6 +282,33 @@ border: 1px solid #000;
     
 }
 
+/* product & services style */
+.product-list{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 100px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.product-services h4{
+    color: #140c40;
+}
+.product-list h4{
+    margin-bottom: 10px;
+}
+.product-list li{
+    list-style-type: circle;
+    padding: 3px 5px;
+}
+
+.product-list a{
+    color: rgb(134, 134, 134);
+}
+
+.product-list a:hover{
+    color: #140c40;
+}
+
 .values{
     margin-left: 50px;
 }
@@ -383,6 +410,7 @@ footer{
     background-color: #171517;
     color: #fFFC94;
     text-align: center;
+    font-family: 'Roboto';
 }
 footer h4{
     font-size: 1.3rem;
@@ -407,7 +435,8 @@ footer a:hover{
 
 /* Slideshow container */
 .slideshow-container {
-    max-width: 1000px;
+    min-width: 1000px;
+    min-height: 70%;
     position: relative;
     margin: auto;
   }
